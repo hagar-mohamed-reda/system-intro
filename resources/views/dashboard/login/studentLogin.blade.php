@@ -9,7 +9,7 @@
                 overflow: auto!important;
             }
             body {
-                background-image: url('{{ url("/images/login")  }}/{{ optional(App\Setting::find(3))->value }}')!important;
+                background-image: url('{{ url("/image/login2.jpg")  }}')!important;
                 background-size: cover!important;
                 background-repeat: no-repeat!important;
             }
@@ -31,9 +31,11 @@
             <!-- Content Wrapper. Contains page content -->
             <div class="login-box w3-animate-top " style="margin-top: 30px" >
                 <div class="login-logo">
-                    <img src="{{ url('/images/login') }}/{{ optional(App\Setting::find(4))->value }}" class="w3-center w3-round"  width="90px" > 
+                    <img src="{{ url('/image/logo.png') }}" class="w3-center w3-round"  width="90px" > 
                     <br>
-                    <a href="#"  class="w3-text-white" ><b> {{ optional(App\Setting::find(5))->value }}  </b></a>
+                    <a href="#"  class="w3-text-white" style="text-shadow: 2px 2px black;"  ><b> المعهد العالى للسياحة و الفنادق و الحاسب الآلى
+                            <br>
+السيوف - الإسكندرية  </b></a>
                 </div>
                 <!-- /.login-logo -->
                 <div class="login-box-body w3-card">
