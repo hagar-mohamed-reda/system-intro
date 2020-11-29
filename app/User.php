@@ -64,7 +64,7 @@ class User extends Authenticatable {
     }
 
     public function notifications() {
-        return DB::table('notification')->where('user_id', $this->id);
+        return DB::table('notifications')->where('user_id', $this->id);
     }
 
     public function loginHistories() {

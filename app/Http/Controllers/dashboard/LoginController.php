@@ -49,7 +49,11 @@ class LoginController extends Controller {
         
         
         try {
-            $user = User::where("phone", $request->phone)
+            $user = User::query()
+            ->where("phone", $request->phone)
+            ->orWhere("username", $request->phone)
+            ->orWhere("email", $request->phone)
+                    
             ->where("password", $request->password)
             ->where('type', $request->type)
             ->first();
