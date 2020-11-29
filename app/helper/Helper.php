@@ -240,7 +240,7 @@ class Helper {
      * random token every milisecond encrypted
      * @return type String
      */
-    function randamToken() {
+    public static function randamToken() {
         // time in mili seconds
         $timeInMiliSeconds = (int) round(microtime(true) * 1000);
 
