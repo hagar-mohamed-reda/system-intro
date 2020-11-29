@@ -53,15 +53,15 @@ class User extends Authenticatable {
     ];
     
     public function getOnlineExamAttribute() {
-        return "exam.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
+        return "http://exam.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
     }
     
     public function getOnlineResearchAttribute() {
-        return "research.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
+        return "http://research.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
     }
     
     public function getOnlineLmsAttribute() {
-        return "lms.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
+        return "http://lms.seyouf.sphinxws.com/remote?api_token=" . $this->api_token;
     }
 
     public function notifications() {
