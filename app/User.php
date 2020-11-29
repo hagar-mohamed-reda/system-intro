@@ -42,6 +42,7 @@ class User extends Authenticatable {
         'national_id',
         'role_id',
         'graduated',
+        'api_token',
         'can_see_result'
     ];
     

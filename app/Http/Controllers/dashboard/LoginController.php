@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\User;
-use App\helper\Message;
-use App\helper\Helper;
+use Illuminate\Support\Facades\Hash;
+use App\helper\Message; 
 use App\LoginHistory;
+use App\helper\Helper;
 
 class LoginController extends Controller {
 
@@ -53,15 +54,20 @@ class LoginController extends Controller {
             ->where("phone", $request->phone)
             ->orWhere("username", $request->phone)
             ->orWhere("email", $request->phone)
-                    
-            ->where("password", $request->password)
+                     
             ->where('type', $request->type)
             ->first();
 
             if ($user) {
+                if (!Hash::check($request->password, $user->password)) 
+                    return redirect($redirect . "?status=0&msg=$error");
+                
                 if ($user->active == 0)
                     return redirect($redirect . "?status=0&msg=" . __('your account is not confirmed'));
 
+                if (!$user->api_token)
+                    $user->update( [ "api_token" => Helper::randamToken() ] );
+                
                 Auth::login($user);
                 
                 LoginHistory::create([
