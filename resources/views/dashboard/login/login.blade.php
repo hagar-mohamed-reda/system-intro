@@ -30,25 +30,21 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="login-box w3-animate-top " style="margin-top: 30px" >
-                <div class="login-logo">
-                    <img src="{{ url('/image/logo.png') }}" class="w3-center w3-round"  width="90px" > 
+                <div class="login- text-center">
+                    <img src="{{ url('/image/logo.jpg') }}" class="w3-center w3-round"  width="90px" > 
                     <br>
-                    <a href="#"  class="w3-text-white" style="text-shadow: 2px 2px black;"  ><b> المعهد العالى للسياحة و الفنادق و الحاسب الآلى
-                            <br>
-السيوف - الإسكندرية  </b></a>
+                    <a href="#"  class="w3-text-white w3-large" style="text-shadow: 2px 2px black;"  ><b>المعهد العالى للسياحة و الفنادق و الحاسب الآلى السيوف - الإسكندرية</b></a>
                 </div>
                 <!-- /.login-logo -->
                 <div class="login-box-body w3-card">
-                    <p class="login-box-msg">{{ __('login to your dashboard control') }}</p>
-                    <br>
+                    <p class="login-box-msg">{{ __('login to your dashboard control') }}</p> 
                     <p  class="login-box-msg w3-text-red">{{ __('note: you must enter the number in english (phone, sms_code, password, code)') }}</p>
                     <center>
                         <div class="btn-group" role="group" aria-label="...">
                              <button type="button" class="btn btn-default" onclick="$('.auth-container, .auth-card').slideUp(500);$('.doctor-container, .doctor-login-card').slideDown(500)" >{{ __('doctor') }}</button>
                             <button type="button" class="btn btn-default" onclick="$('.auth-container, .auth-card').slideUp(500);$('.admin-container, .admin-login-card').slideDown(500)" >{{ __('admin') }}</button>
                         </div>
-                    </center>
-                    <br> 
+                    </center> 
                     @include('dashboard.login.doctor')
 
                     @include('dashboard.login.admin')

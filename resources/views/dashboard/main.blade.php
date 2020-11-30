@@ -15,7 +15,7 @@
     
     <div class="text-center container-fluid" >
         
-        <a class="col-lg-4 col-md-3 col-sm-12  col-xs-12" style="cursor: pointer" target="_blank" href="{{ Auth::user()->online_exam }}" >
+        <a class="col-lg-4 col-md-3 col-sm-12  col-xs-12 hidden" style="cursor: pointer" target="_blank" href="{{ Auth::user()->online_exam }}" >
             <div class="w3-white w3-round shadow w3-padding text-center" >
                 <img src="{{ url('/image/online_exam.svg') }}" style="max-width: 150px" >
                 <br>
