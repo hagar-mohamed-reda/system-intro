@@ -5,7 +5,7 @@
         {!! view("dashboard.layout.css") !!}
 
     </head>
-    <body class="hold-transition skin-blue-light"  style="margin: 0px!important"  >
+    <body class="hold-transition skin skin-black"  style="margin: 0px!important"  >
 
         <div id="root" >
             <!-- include topbar html -->

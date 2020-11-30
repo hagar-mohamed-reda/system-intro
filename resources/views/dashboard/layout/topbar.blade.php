@@ -5,11 +5,11 @@
     <a href="#" class="logo shadow" style="background-image: url({{ url('image/.png') }});background-size: cover;min-height: 50px;" >
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini">
-          <img src="{{ url('/') }}/image/user.png" width="30px" >
+          <img src="{{ url('/') }}/image/logo.jpg" class="w3-round" width="30px" >
       </span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
-          <img src="{{ url('/') }}/image/user.png" width="40px" >
+          <img src="{{ url('/') }}/image/logo.jpg" class="w3-round" width="40px" >
       </span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
