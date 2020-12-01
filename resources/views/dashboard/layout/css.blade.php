@@ -7,7 +7,7 @@
 <title>{{ optional(App\Setting::find(5))->value }}</title>
 
 <!-- Tell the browser to be responsive to screen width -->
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
@@ -61,6 +61,9 @@
 <!-- jQuery 3 -->
 <script src="{{ url('/') }}/js/jquery-3.2.1.min.js"></script>
 
+
+<link rel="shortcut icon" href="{{ url('/') }}/image/logo.jpg" type="image/x-icon">
+
 <!-- commen style -->
 <style>
     *, .font, h1, h2, h3, h4, h5, h6 {
@@ -80,7 +83,7 @@
         direction: rtl;
     }
 
-   
+
 
     .treeview-menu {
         padding-right: 35px!important;
