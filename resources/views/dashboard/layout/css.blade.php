@@ -62,7 +62,7 @@
 <script src="{{ url('/') }}/js/jquery-3.2.1.min.js"></script>
 
 
-<link rel="shortcut icon" href="{{ url('/') }}/image/logo.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="{{ url('/') }}/image/logo.png" type="image/png">
 
 <!-- commen style -->
 <style>
